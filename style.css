@@ -11,7 +11,7 @@ body {
 
 main {
     width: 650px;
-    height: 500px;
+    height: 480px;
     display: flex;
     margin: 215px auto;
     border-radius: 10px;
@@ -61,12 +61,76 @@ h1 {
 }
 
 .p3 {
-    
+    margin-top: 30px;
+    font-size: 35px;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    width: 200px;
 }
 
-
+.p3 > span {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    width: 100px;
+    margin-left: 160px;
+    margin-top: -30px;
+    color: rgba(0, 0, 0, 0.534);
+}
 
 button {
-    margin: auto;
-    display: block;
+    margin: 35px auto;
+    padding-bottom: 10px;
+    display: flex;
+    width: 250px;
+    height: 45px;
+    border-radius: 7px;
+    border: none;
+    background-color: hsla(152, 76%, 10%, 0.934);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
 }
+
+button:hover {
+    background-color: white;
+    color: white;
+    transition: 0.5s;
+    transform: scale(1);
+}
+
+button > p {
+    padding-top: 3px;
+    margin-left: -20px;
+}
+
+img {
+    padding-top: 13px ;
+    margin-left: 70px;
+} 
+
+  button:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: hsla(152, 75%, 21%, 0.934);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: all 1s ease;
+  }
+  button:hover:after {
+    left: 0;
+    width: 100%;
+    color: white;
+  }
+  button:active {
+    top: 2px;
+    color: white;
+  }
+  
+
